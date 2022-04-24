@@ -1,0 +1,185 @@
+:root {
+    font-size: 62.5%;
+    --fs-h1: 4.0rem;
+    --fs-p-h2: 2.0rem;
+  
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1995px;
+    background: #EFF1FF;
+
+}
+
+.page{
+    margin: 0 auto;
+    font-family: 'Staatliches';
+}
+
+
+
+header{
+    background-color: #8E9AAF;
+    height: 279px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.wrapperHeader{
+    position: absolute;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 29px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.logo{
+    margin-bottom: 3.2rem;
+    height: 13.7rem;
+    width: 13.7rem;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    display: flex;
+    align-content: center; 
+    justify-content: center;
+
+    background-color: #CBC0D3;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: var(--fs-h1);
+    line-height: 3.4rem;
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper{
+    
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding: 14px 32px 60px;
+}
+
+p{
+    margin-bottom: 6.3rem;
+
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-p-h2);
+    line-height: 1.5rem;
+ 
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #23053A;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+
+    transition: all 200ms;
+
+    animation-name: cardImg;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-delay: 250ms;
+    animation-timing-function: ease;
+  
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.card + .card{
+    margin-top: 3.2rem;
+}
+
+.card {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h2 {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 112px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-p-h2);
+    line-height: 3.4rem;
+    
+    text-align: center;
+
+    letter-spacing: 0.05em;
+
+    color: #4A4E69;
+   
+    background: #FEEAFA;
+    border-radius: 2.0rem;
+
+    animation-name: cardH2;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-delay: 250ms;
+    animation-timing-function: ease;
+}
+
+
+@keyframes cardH2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes cardImg {
+    0% {
+        opacity: 0;
+        transform: translateY(+15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
